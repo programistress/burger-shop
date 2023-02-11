@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav::-webkit-scrollbar {
+  display: none;
+}
+
+.active {
+  background-color: #FFAB08;
+  color: white;
+} 
+

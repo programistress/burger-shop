@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Meal</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="styles/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="styles/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="styles/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="styles/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="theme-color" content="#ffffff">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:regular,600,800" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/output.css">
+
+  <script src="./app/products.js" defer></script> 
+  <script src="./app/shoppingCart.js" defer></script>
+  
+</head>
+
+<body class="font-['Nunito'] bg-light-grey">
+
+  <header class="bg-orange h-[465px] bg-[length:611px] bg-bottom bg-no-repeat small:bg-[length:1200px] small2:bg-[length:1400px] small2:h-[350px] 
+  tablet:bg-[length:2540px] comp:bg-[length:2880px] fullhd:bg-[length:4700px] comp:h-[466px] mb-[30px] comp:mb-[40px]">
+    <img class="w-[150px] py-[24px] mx-auto" src="./styles/img/logo_white.svg" alt="">               
+    <div class="place-content-between items-center flex flex-col max-w-xsm mx-auto px-10 small2:flex-row-reverse small2:max-w-sm small2:items-start tablet:max-w-m comp:max-w-l ">
+      <div class="small2:pl-[10px]">
+      <h1 class="text-white font-extrabold text-l leading-s text-center mb-[24px] small2:text-left small2:w-[310px] small2:mt-[27px] tablet:text-xl tablet:w-[350px] tablet:leading-m comp:text-xxl comp:w-[437px] comp:leading-l comp:mt-[36px]">Only the most 
+      <span class="text-dark-orange">delicious burgers!</span></h1>
+      <p class="text-s text-white font-normal text-center mb-[15px] small2:text-left comp:text-m">Free delivery for orders starting at 10$</p>
+      </div>
+      <div>
+      <img class="w-[227px] small2:w-[227px] tablet:w-[227px] comp:w-[325px]" src="./styles/img/burgershadow.svg" alt="">
+      </div>
+    </div>
+  </header>
+
+  <nav class="mx-[10px] overflow-x-auto mb-[30px] tablet:mx-[20px] comp:mx-[30px] ">
+    <ul class="flex gap-x-[8px] comp:gap-x-[15px] special:justify-center">
+      <li>
+        <button id="burgers" class="flex text-s py-[3px] px-[8px] justify-center items-center bg-white rounded-[50px] active:bg-light-orange min-w-[90px] transition duration-75 ease-in-out tablet:text-m tablet:min-w-[125px]">
+          <img class="w-[24px] mr-[8px]" src="./styles/img/free-icon-cheeseburger-2362255.svg" alt="">
+          <p>Burgers</p>
+        </button>
+      </li>
+      <li>
+        <button id="snacks" class="flex text-s py-[3px] px-[8px] justify-center items-center bg-white rounded-[50px] active:bg-light-orange min-w-[90px] transition duration-75 ease-in-out tablet:text-m tablet:min-w-[120px]">
+          <img class="w-[24px] mr-[8px]" src="./styles/img/free-icon-onion-2362361.svg" alt="">
+          <p>Snacks</p>
+        </button>
+      </li>
+      <li>
+        <button class="flex text-s py-[3px] px-[8px] justify-center items-center bg-white rounded-[50px] active:bg-light-orange min-w-[105px] transition duration-75 ease-in-out tablet:text-m tablet:min-w-[130px]">
+          <img class="w-[24px] mr-[8px]" src="./styles/img/free-icon-hotdog-sandwich-2362313.svg" alt="">
+          <p>Hot-Dogs</p>
+        </button>
+      </li>
+      <li>
+        <button class="flex text-s py-[3px] px-[8px] justify-center items-center bg-white rounded-[50px] active:bg-light-orange min-w-[90px] transition duration-75 ease-in-out tablet:text-m tablet:min-w-[115px]">
+          <img class="w-[24px] mr-[8px]" src="./styles/img/free-icon-fast-food-2362274.svg" alt="">
+          <p>Combo</p>
+        </button>
+      </li>
+      <li>
+        <button class="flex text-s py-[3px] px-[8px] justify-center items-center bg-white rounded-[50px] active:bg-light-orange min-w-[90px] transition duration-75 ease-in-out tablet:text-m tablet:min-w-[115px]">
+          <img class="w-[24px] mr-[8px]" src="./styles/img/free-icon-burrito-2362225.svg" alt="">
+          <p>Burrito</p>
+        </button>
+      </li>
+      <li>
+        <button class="flex text-s py-[3px] px-[8px] justify-center items-center bg-white rounded-[50px] active:bg-light-orange min-w-[90px] transition duration-75 ease-in-out tablet:text-m tablet:min-w-[115px]">
+          <img class="w-[24px] mr-[8px]" src="./styles/img/free-icon-pizza-2362372.svg" alt="">
+          <p>Pizza</p>
+        </button>
+      </li>
+      <li>
+        <button class="flex text-s py-[3px] px-[8px] justify-center items-center bg-white rounded-[50px] active:bg-light-orange min-w-[90px] transition duration-75 ease-in-out tablet:text-m tablet:min-w-[125px]">
+          <img class="w-[24px] mr-[8px]" src="./styles/img/free-icon-noodles-2362350.svg" alt="">
+          <p>Noodles</p>
+        </button>
+      </li>
+      <li>
+        <button class="flex text-s py-[3px] px-[8px] justify-center items-center bg-white rounded-[50px] active:bg-light-orange min-w-[90px] transition duration-75 ease-in-out tablet:text-m tablet:min-w-[125px]">
+          <img class="w-[24px] mr-[8px]" src="./styles/img/free-icon-doughnut-2362260.svg" alt="">
+          <p>Deserts</p>
+        </button>
+      </li>
+      <li>
+        <button class="flex text-s py-[3px] px-[8px] justify-center items-center bg-white rounded-[50px] active:bg-light-orange min-w-[90px] transition duration-75 ease-in-out tablet:text-m tablet:min-w-[120px]">
+          <img class="w-[24px] mr-[8px]" src="./styles/img/free-icon-ketchup-2362341.svg" alt="">
+          <p>Souces</p>
+        </button>
+      </li>
+    </ul>
+  </nav>
+  
+  <main class="px-10 tablet:px-[50px] comp:px-[70px] fullhd:px-[100px] mb-[80px] relative ">
+    <!-- cart -->  
+    <div class="bg-white rounded-[12px] py-[16px] px-10 tablet:absolute comp:w-[500px] tablet:w-[370px] mb-[30px]">
+      <div class="flex place-content-between  cursor-pointer" id="cart">
+      <h2 class="font-semibold">Your Cart</h2>
+      <p class="px-[13px] py-[1px] rounded-[6px] bg-grey" id="total-items">0</p>
+      </div>
+       <!-- cart cards -->
+      <div class="hidden" id="dropdown">
+        <div id="cart-items">
+      
+        </div> 
+    <!-- total -->
+    <div class="flex place-content-between text-s small2:text-m mt-[13px] mb-[15px]">
+      <h3>Total</h3>
+      <p id="total"></p>
+    </div>
+    <div class="flex items-center justify-center text-s small2:text-m mb-[8px] w-full">
+      <button class="text-white bg-btn-orange w-full py-[9px] rounded-lg">Place an order</button>
+    </div>
+    <div class="flex place-content-between items-center text-s small2:text-m ">
+      <div class="flex items-center"  id="free-delivery">
+        <img class="w-[24px] mr-[8px]" src="./styles/img/free-icon-delivery-2362252.svg" alt="">
+        <p>Free delivery!</p>
+      </div>
+      <div class="text-desc-grey">
+        <button id="close-cart">Close</button>
+      </div>
+        </div>
+       </div>
+    </div>
+    
+    <h2 class="mb-[20px] text-header font-semibold mt-[20px] tablet:pt-[78px]" id="burgers-title">Burgers</h2>
+        <!-- Products -->
+    <div class="grid grid-cols-2 gap-[10px] small2:grid-cols-3 tablet:grid-cols-4 fullhd:grid-cols-5" id="burgers-el">
+      
+    </div>
+    <h2 class="mb-[20px] text-header font-semibold mt-[20px] tablet:pt-[78px] hidden" id="snacks-title">Snacks</h2>
+    <div class="grid grid-cols-2 gap-[10px]small2:grid-cols-3 tablet:grid-cols-4 fullhd:grid-cols-5 hidden"  id="snacks-el">
+      
+    </div>
+  </main>
+  <footer class="bg-white w-full px-10 py-[25px] tablet:pt-[40px] comp:pt-[52px] comp:grid comp:grid-cols-2 comp:px-[32px] bigcomp:pt-[51px] bigcomp:px-[72px]">
+    <div>
+    <img class="w-[196px] mb-[24px] tablet:mb-[36px] comp:w-[300px] comp:mb-[59px]" src="./styles/img/logo-orange.svg" alt="">
+    </div>
+    <div>
+    <h3 class="text-[18px] mb-[12px] comp:text-[24px] comp:mb-25px">Phone Number For Orders</h3>
+    <div class="flex items-center mb-[28px] tablet:mb-[35px]">
+      <img class="w-[18px] h-[18px] mr-[7px]" src="./styles/img/phone.svg" alt="">
+      <p class="text-s comp:text-m">+38(063)555-35-35</p>
+    </div>
+   </div>
+   <div>
+    <p class="text-s">© YouMeal, 2022</p>
+   </div>
+  </footer>
+</body>
+</html>
