@@ -13,26 +13,6 @@ const snacksTitle = document.querySelector('#snacks-title')
 const burgersProducts = document.querySelector('#burgers')
 const burgersTitle = document.querySelector('#burgers-title')
 
-function tabFunction() {
-  snacksEl.classList.remove("hidden")
-  snacksTitle.classList.remove("hidden")
-  burgersEl.classList.add("hidden")
-  burgersTitle.classList.add("hidden")
-  burgersProducts.classList.remove("active")
-  snacksProducts.classList.add("active")
-}
-
-function burgerTabFunction() {
-  burgersEl.classList.remove("hidden")
-  burgersTitle.classList.remove("hidden")
-  snacksEl.classList.add("hidden")
-  snacksTitle.classList.add("hidden")
-  burgersProducts.classList.add("active")
-  snacksProducts.classList.remove("active")
-}
-
-snacksProducts.addEventListener('click', tabFunction)
-burgersProducts.addEventListener('click', burgerTabFunction)
 
 // dropdown cart using toggle
 // Метод toggle объекта classList чередует заданный CSS класс элемента: добавляет класс, если его нет и удаляет, если есть.
